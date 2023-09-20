@@ -29,7 +29,10 @@ export async function execute(interaction) {
 		{
 			name: '/bug',
 			value: 'Send a bug report to the maintainers'
-		}
-	);
+		},
+		{
+			name: '/ip'
+		        value: 'Show iP of SnowMc☄️'
+                }
 	await interaction.editReply({ embeds: [helpEmbed], ephemeral: true });
 }
