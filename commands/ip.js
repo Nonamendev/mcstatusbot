@@ -10,5 +10,5 @@ export async function execute(interaction) {
 			name: 'SnowMc ☄️',
 			value: 'Name : **Snow Mc**,iP : **play.snowmc.fun**,Port : **19132**'
 		},
-	await interaction.editReply({ embeds: [helpEmbed], ephemeral: true });
+	await interaction.editReply({ embeds: [ipEmbed], ephemeral: false });
 }
