@@ -34,5 +34,5 @@ export async function execute(interaction) {
 			name: '/ip'
 		        value: 'Show iP of SnowMc☄️'
                 }
-	await interaction.editReply({ embeds: [helpEmbed], ephemeral: true });
+	await interaction.editReply({ embeds: [helpEmbed], ephemeral: false });
 }
