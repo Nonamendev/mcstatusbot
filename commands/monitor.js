@@ -10,7 +10,7 @@ import { renameChannels } from '../functions/renameChannels.js';
 import { sendMessage } from '../functions/sendMessage.js';
 
 export const data = new SlashCommandBuilder()
-	.setName('monitor')
+	.setName('setup channel')
 	.setDescription('Create 2 voice channels that display the status of a Minecraft server')
 	.addStringOption((option) => option
 		.setName('ip')
@@ -19,7 +19,7 @@ export const data = new SlashCommandBuilder()
 	.addStringOption((option) => option
 		.setName('nickname')
 		.setDescription('Server nickname')
-		.setRequired(false))
+		.setRequired(true))
 	.addBooleanOption((option) => option
 		.setName('default')
 		.setDescription('Set this server to be the default for all commands')
