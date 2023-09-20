@@ -1,7 +1,7 @@
 'use strict';
 import { EmbedBuilder } from 'discord.js';
 
-export const embedColor = '#7289DA';
+export const embedColor = '#8080ff';
 
 export async function sendMessage(interaction, message, title) {
 	const responseEmbed = new EmbedBuilder().setDescription(message).setColor(embedColor);
