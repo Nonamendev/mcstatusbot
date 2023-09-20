@@ -4,8 +4,8 @@ import { logWarning } from './consoleLogging.js';
 
 export async function renameChannels(channels, serverStatus) {
 	const channelNames = {
-		statusName: serverStatus.online ? 'Status: Online' : 'Status: Offline',
-		playersName: serverStatus.players ? `Players: ${serverStatus.players.online} / ${serverStatus.players.max}` : 'Players: 0'
+		statusName: serverStatus.online ? '📊〢 Status - Online' : '📊〢 Status - Offline',
+		playersName: serverStatus.players ? `📊〢 Players - ${serverStatus.players.online} / ${serverStatus.players.max}` : '📊〢 Players - 0 / 0'
 	};
 
 	await Promise.allSettled(
